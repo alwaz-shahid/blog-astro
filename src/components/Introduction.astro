@@ -1,0 +1,90 @@
+---
+import LinkBtn from './LinkBtn.astro';
+
+const { platform, username } = Astro.props;
+---
+
+<section class='w-1/2 mx-auto px-2 py-10 space-x-5 space-y-5 text-left'>
+  <h1 class='text-6xl text-center'>
+    Alwaz <span class='text-red-500'>|</span> Full Stack Engineer <span
+      class='text-red-500 font-extrabold animate-pulse'>.</span
+    > .
+  </h1>
+
+  <div class='w-full h-1 rounded-full bg-slate-300'></div>
+  <div class='p-5 space-x-5'>
+    <LinkBtn platform='github' url='https://github.com/alwaz-shahid' />
+    <LinkBtn
+      platform='LinkedIn'
+      url='https://www.linkedin.com/in/alwaz-shahid/'
+    />
+    <LinkBtn platform='Twitter' url='https://github.com/alwaz-shahid' />
+  </div>
+  <div class='w-full h-1 rounded-full bg-slate-300'></div>
+  <h3 class='text-xl text-justify'>
+    Hey there! My name is Alwaz Shahid, and I'm a passionate software developer
+    with a knack for creating innovative, user-friendly solutions. With
+    extensive experience in web development, machine learning, and open-source
+    technology, I take pride in delivering high-quality code and driving
+    projects to success. Whether you're looking to build a dynamic website,
+    implement cutting-edge machine learning algorithms, or leverage the power of
+    open-source tech, I'm here to help.
+  </h3>
+  <p class='text-red-500 italic p-2'>Let's build something amazing together!</p>
+
+  <div class='p-8'>
+    <h2 class='text-3xl font-bold mb-4'>Experience & Skills</h2>
+    <ul class='list-disc list-inside mb-8'>
+      <li>
+        Developed and deployed multiple scalable web applications, resulting in
+        a 50% increase in user engagement and a 30% boost in revenue.
+      </li>
+      <li>
+        Proficient in a wide range of programming languages and frameworks,
+        including React, Node.js, Python, and Django, allowing for agile
+        development and quick problem-solving.
+      </li>
+      <li>
+        Passionate about creating intuitive and user-friendly interfaces,
+        resulting in a 40% increase in user satisfaction and a 25% reduction in
+        support requests.
+      </li>
+      <li>
+        Experienced in implementing machine learning algorithms and data
+        analysis techniques, resulting in improved business decision-making and
+        streamlined workflows.
+      </li>
+      <li>
+        Collaborated with cross-functional teams to ensure seamless integration
+        of software solutions and contributed to a positive team dynamic,
+        resulting in successful project delivery ahead of schedule.
+      </li>
+      <li>
+        Contributed to various open-source projects, showcasing a commitment to
+        community-driven development and a willingness to learn and share
+        knowledge.
+      </li>
+      <li>
+        Strong written and verbal communication skills, enabling effective
+        communication with clients, stakeholders, and team members at all
+        levels.
+      </li>
+      <li>
+        Always up-to-date with the latest trends and technologies in software
+        development, resulting in the implementation of cutting-edge solutions
+        and staying ahead of the competition.
+      </li>
+    </ul>
+  </div>
+</section>
+
+<style>
+  a {
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: #4c1d95;
+    text-decoration: none;
+    overflow: hidden;
+    height: 20px;
+  }
+</style>
