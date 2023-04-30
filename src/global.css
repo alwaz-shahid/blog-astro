@@ -1,4 +1,5 @@
 /* The integration's default injected base.css file */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 html {
   font-family: system-ui, sans-serif;
