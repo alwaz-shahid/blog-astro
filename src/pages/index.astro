@@ -2,13 +2,15 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Welcome from '../layouts/Welcome.astro';
+import Navigation from '../components/Navigation.astro';
 ---
 
 <Layout title='Alwaz Shahid'>
   <main>
     <!-- <h1>Hey! its <span class="text-gradient">Alwaz</span></h1> -->
     <Welcome>
-      <a href='/about'>about</a>
+      <Navigation />
+      <p class='text-black group-hover:text-gray text-2xl'>Astro</p>
     </Welcome>
   </main>
 </Layout>
