@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Welcome from '../layouts/Welcome.astro';
 import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout title='Alwaz Shahid'>
@@ -10,8 +11,11 @@ import Navigation from '../components/Navigation.astro';
     <!-- <h1>Hey! its <span class="text-gradient">Alwaz</span></h1> -->
     <Welcome>
       <Navigation />
-      <p class='text-black group-hover:text-gray text-2xl'>Astro</p>
+      <div>
+        <p class='text-black group-hover:text-gray text-2xl'>Astro</p>
+      </div>
     </Welcome>
+    <p>yo</p>
   </main>
 </Layout>
 
@@ -20,6 +24,7 @@ import Navigation from '../components/Navigation.astro';
     margin: auto;
     /* padding: 1.5rem; */
     /* max-width: 60ch; */
+    overflow: hidden;
   }
   h1 {
     font-size: 3rem;
@@ -41,6 +46,9 @@ import Navigation from '../components/Navigation.astro';
     background-color: white;
     padding: 1rem;
     border-radius: 0.4rem;
+  }
+  p {
+    color: aliceblue;
   }
   .instructions code {
     font-size: 0.875em;
