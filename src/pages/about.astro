@@ -1,0 +1,140 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+  pageTitle: "About Us"
+---
+
+<Layout title="page">
+  <div class="container">
+
+<div class="landing">
+<div class="reveal-container">
+
+    <h1>
+        <span>reveal</span>
+    </h1>
+</div>
+    <div class="content">
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quas error vero vitae officia esse consequatur itaque quia laudantium, suscipit dolor iste molestiae provident animi accusantium facere sint laboriosam unde.
+</p>
+<div class="color-box">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut enim quis in maiores beatae quisquam ducimus harum iste libero at fugit quaerat sequi voluptates, laborum, debitis obcaecati a voluptatem voluptate?
+</div>
+
+
+    </div>
+</div>
+</div>
+
+  <!-- <div class="container">
+    <h1 class="heading">About Us</h1>
+    <p class="description">We are a team of dedicated professionals who love creating amazing web experiences for our clients.</p>
+  </div> -->
+</Layout>
+
+<style>
+
+ .page{
+        height: 100vh;
+    }
+.container {
+  padding: 0;
+  /* max-width: 960px; */
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(105, 199, 105);
+}
+h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 200px;
+  /* overflow: hidden; */
+  line-height: 1;
+  color: #fff;
+}
+h1 span {
+  display: block;
+  animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1) 0.5s forwards;
+  visibility: hidden;
+}
+.content{  
+    padding: 0;
+  /* max-width: 960px; */
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(30, 28, 28);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reveal-container{  padding: 0;
+  /* max-width: 960px; */
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  animation-name: grow;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+}
+
+
+
+@keyframes grow {
+  from {
+    height: 100vh;
+  }
+  to {
+    height: 0px;
+    display: hidden;
+  }
+
+}
+
+@keyframes reveal {
+  0% {
+    transform: translate(0,100%);
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    transform: translate(0,0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.color-box {
+        height: 100px;
+        width: 100%;
+        position: relative;
+        background-color: red;
+    }
+
+    .color-box:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to right, red, yellow, green);
+        z-index: -1;
+        animation: color-change 5s linear infinite;
+    }
+
+    @keyframes color-change {
+        0% {
+            background-position: 100% 0;
+        }
+        100% {
+            background-position: 0 0;
+        }
+    }
+
+</style>
