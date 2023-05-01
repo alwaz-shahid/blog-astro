@@ -57,7 +57,7 @@ pageTitle: 'About Us';
     margin: 0;
     text-align: center;
     /* font-size: 60pt; */
-    /* overflow: hidden; */
+    overflow: hidden;
     line-height: 1;
     padding: 10px;
     /* color: #201d1d; */
@@ -65,7 +65,7 @@ pageTitle: 'About Us';
   }
   .s1 {
     display: block;
-    animation: reveal 3s cubic-bezier(0.77, 0, 0.175, 1);
+    animation: reveal 2s cubic-bezier(0.77, 0, 0.175, 1) 0.2s forwards;
     visibility: hidden;
     font-style: italic;
     padding: 50px;
@@ -74,7 +74,7 @@ pageTitle: 'About Us';
 
   .s2 {
     display: block;
-    animation: reveal-one 2.2s cubic-bezier(0.77, 0, 0.175, 1) 1s;
+    animation: reveal-one 2s cubic-bezier(0.77, 0, 0.175, 1) 1s forwards;
     visibility: hidden;
     font-style: italic;
     /* font-size: 60pt; */
@@ -99,7 +99,8 @@ pageTitle: 'About Us';
     margin: 0 auto;
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(30, 28, 28);
+    background-color: rgb(37, 35, 35);
+    /* background-color: rgb(30, 28, 28); */
     color: #fff;
     display: flex;
     align-items: center;
@@ -121,7 +122,7 @@ pageTitle: 'About Us';
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* overflow: hidden; */
+    overflow: hidden;
   }
 
   @keyframes grow {
@@ -143,19 +144,19 @@ pageTitle: 'About Us';
     100% {
       transform: translate(0, 0);
       opacity: 1;
-      visibility: hidden;
+      visibility: visible;
     }
   }
   @keyframes reveal {
     0% {
       transform: translate(0, 100%);
-      opacity: 0.2;
+      opacity: 0;
       visibility: visible;
     }
     100% {
       transform: translate(0, 0);
       opacity: 1;
-      visibility: hidden;
+      visibility: visible;
     }
   }
 </style>
