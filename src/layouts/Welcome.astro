@@ -65,7 +65,7 @@ pageTitle: 'About Us';
   }
   .s1 {
     display: block;
-    animation: reveal 2s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+    animation: reveal 3s cubic-bezier(0.77, 0, 0.175, 1);
     visibility: hidden;
     font-style: italic;
     padding: 50px;
@@ -74,7 +74,7 @@ pageTitle: 'About Us';
 
   .s2 {
     display: block;
-    animation: reveal-one 2s cubic-bezier(0.77, 0, 0.175, 1) 1s forwards;
+    animation: reveal-one 2.2s cubic-bezier(0.77, 0, 0.175, 1) 1s;
     visibility: hidden;
     font-style: italic;
     /* font-size: 60pt; */
@@ -121,7 +121,7 @@ pageTitle: 'About Us';
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   @keyframes grow {
@@ -143,19 +143,19 @@ pageTitle: 'About Us';
     100% {
       transform: translate(0, 0);
       opacity: 1;
-      visibility: visible;
+      visibility: hidden;
     }
   }
   @keyframes reveal {
     0% {
       transform: translate(0, 100%);
-      opacity: 0.5;
+      opacity: 0.2;
       visibility: visible;
     }
     100% {
       transform: translate(0, 0);
       opacity: 1;
-      visibility: visible;
+      visibility: hidden;
     }
   }
 </style>
