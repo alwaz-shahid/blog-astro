@@ -5,15 +5,16 @@ const { platform, username } = Astro.props;
 ---
 
 <section
-  class='w-1/2 mx-auto px-2 py-10 space-x-5 space-y-5 text-left flex items-center justify-center flex-col'>
-  <h1 class='text-6xl text-center'>
-    Alwaz <span class='text-red-500'>|</span> Full Stack Engineer <span
-      class='text-red-500 font-bold animate-pulse'>.</span
+  class='lg:w-3/4 w-11/12 mx-auto px-1 py-3 space-x-2 space-y-2 md:px-2 md:py-10 md:space-x-5 md:space-y-5 text-left flex items-center justify-center flex-col'>
+  <h1 class='lg:text-6xl text-4xl text-center first-letter:text-red-500'>
+    Alwaz <span class='text-red-500'>~</span> Full Stack <span
+      class='text-red-500'>Engineer</span
     >
   </h1>
 
-  <div class='w-full h-1 rounded-full bg-slate-300'></div>
-  <div class='p-5 space-x-5'>
+  <div class='w-full h-0.5 rounded-full bg-slate-200'></div>
+  <div
+    class='p-5 flex justify-between lg:justify-evenly items-center flex-wrap w-full'>
     <LinkBtn platform='github' url='https://github.com/alwaz-shahid' />
     <LinkBtn
       platform='LinkedIn'
@@ -21,8 +22,8 @@ const { platform, username } = Astro.props;
     />
     <LinkBtn platform='Twitter' url='https://github.com/alwaz-shahid' />
   </div>
-  <div class='w-full h-1 rounded-full bg-slate-300'></div>
-  <h3 class='text-xl text-justify'>
+  <div class='w-full h-0.5 rounded-full bg-slate-200'></div>
+  <h3 class='lg:text-xl text-justify'>
     Hey there! My name is Alwaz Shahid, and I'm a passionate software developer
     with a knack for creating innovative, user-friendly solutions. With
     extensive experience in web development, machine learning, and open-source
@@ -34,8 +35,12 @@ const { platform, username } = Astro.props;
   <p class='text-red-500 italic p-2'>Let's build something amazing together!</p>
 
   <div class='p-8'>
-    <h2 class='text-3xl font-bold mb-4'>Experience & Skills</h2>
-    <ul class='list-disc list-inside mb-8'>
+    <h2
+      class='lg:text-3xl text-2xl font-bold mb-4 relative after:absolute after:bg-red-400 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300'>
+      Experience <span class='text-red-500'> &</span>
+      Skills
+    </h2>
+    <ul class='list-disc list-inside mb-8 space-y-3 lg:text-base text-sm'>
       <li>
         Developed and deployed multiple scalable web applications, resulting in
         a 50% increase in user engagement and a 30% boost in revenue.

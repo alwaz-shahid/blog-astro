@@ -1,9 +1,17 @@
 /* The integration's default injected base.css file */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'); */
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('/assets/fonts/Ubuntu-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 html {
-  font-family: system-ui, sans-serif;
+  font-family: 'Ubuntu', system-ui, sans-serif;
   background-color: #f6f2f2;
+  cursor: pointer;
 }
 body,
 html {
@@ -13,6 +21,9 @@ html {
 }
 /* nav styles */
 
+/* body {
+  cursor: url('../../public/assets/cursor.png'), auto;
+} */
 .nav-links {
   width: 100%;
   top: 5rem;
